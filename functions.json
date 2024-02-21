@@ -1,0 +1,809 @@
+[
+  {
+        "type": "function",
+        "function": {
+            "name": "add_numbers",
+            "description": "Add two numbers together",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "description": "The first number to add"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "description": "The second number to add"
+                    }
+                },
+                "required": ["number1", "number2"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "subtract_numbers",
+            "description": "Subtract one number from another",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "description": "The number to subtract from"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "description": "The number to subtract"
+                    }
+                },
+                "required": ["number1", "number2"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "multiply_numbers",
+            "description": "Multiply two numbers together",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "number1": {
+                        "type": "number",
+                        "description": "The first number to multiply"
+                    },
+                    "number2": {
+                        "type": "number",
+                        "description": "The second number to multiply"
+                    }
+                },
+                "required": ["number1", "number2"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "divide_numbers",
+            "description": "Divide one number by another",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "dividend": {
+                        "type": "number",
+                        "description": "The number to be divided"
+                    },
+                    "divisor": {
+                        "type": "number",
+                        "description": "The number to divide by"
+                    }
+                },
+                "required": ["dividend", "divisor"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "concatenate_strings",
+            "description": "Concatenate two strings",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string1": {
+                        "type": "string",
+                        "description": "The first string to concatenate"
+                    },
+                    "string2": {
+                        "type": "string",
+                        "description": "The second string to concatenate"
+                    }
+                },
+                "required": ["string1", "string2"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "uppercase_string",
+            "description": "Convert a string to uppercase",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to convert to uppercase"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "lowercase_string",
+            "description": "Convert a string to lowercase",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to convert to lowercase"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_random_fact",
+            "description": "Retrieve a random fact from a database",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "flip_coin",
+            "description": "Simulate a coin toss, returning heads or tails",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "generate_random_number",
+            "description": "Generate a random number within a range",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "number",
+                        "description": "The minimum value in the range"
+                    },
+                    "max": {
+                        "type": "number",
+                        "description": "The maximum value in the range"
+                    }
+                },
+                "required": ["min", "max"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_day_of_week",
+            "description": "Get the current day of the week",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_square",
+            "description": "Calculate the square of a number",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "number": {
+                        "type": "number",
+                        "description": "The number to square"
+                    }
+                },
+                "required": ["number"]
+            }
+        }
+    },
+  {
+        "type": "function",
+        "function": {
+            "name": "current_time",
+            "description": "Get the current time",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "date_to_timestamp",
+            "description": "Convert a date to a UNIX timestamp",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "description": "The date to convert"
+                    }
+                },
+                "required": ["date"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "timestamp_to_date",
+            "description": "Convert a UNIX timestamp to a human-readable date",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "timestamp": {
+                        "type": "number",
+                        "description": "The UNIX timestamp to convert"
+                    }
+                },
+                "required": ["timestamp"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "length_of_string",
+            "description": "Return the length of a string",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to measure"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "sort_numbers",
+            "description": "Sort a list of numbers",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "numbers": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        },
+                        "description": "The list of numbers to sort"
+                    }
+                },
+                "required": ["numbers"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "select_random_item",
+            "description": "Select a random item from a list",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "The list of items to select from"
+                    }
+                },
+                "required": ["items"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "convert_temperature",
+            "description": "Convert temperature between Celsius and Fahrenheit",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "number",
+                        "description": "The temperature to convert"
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": ["Celsius", "Fahrenheit"],
+                        "description": "The unit of the input temperature ('Celsius' or 'Fahrenheit')"
+                    }
+                },
+                "required": ["temperature", "unit"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "check_palindrome",
+            "description": "Check if a string is a palindrome",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to check"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "generate_uuid",
+            "description": "Generate a universally unique identifier (UUID)",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+  {
+        "type": "function",
+        "function": {
+            "name": "encode_base64",
+            "description": "Encode a string in base64",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to encode"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "decode_base64",
+            "description": "Decode a base64 string",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "base64_string": {
+                        "type": "string",
+                        "description": "The base64 encoded string to decode"
+                    }
+                },
+                "required": ["base64_string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "check_prime",
+            "description": "Check if a number is prime",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "number": {
+                        "type": "number",
+                        "description": "The number to check"
+                    }
+                },
+                "required": ["number"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "fibonacci_sequence",
+            "description": "Generate a Fibonacci sequence up to a certain length",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "length": {
+                        "type": "number",
+                        "description": "The length of the Fibonacci sequence to generate"
+                    }
+                },
+                "required": ["length"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "hash_string",
+            "description": "Compute the hash of a string",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string",
+                        "description": "The string to hash"
+                    }
+                },
+                "required": ["string"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "pick_color_name",
+            "description": "Provide a color name based on hex value",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "hex_value": {
+                        "type": "string",
+                        "description": "The hex value to get the color name for"
+                    }
+                },
+                "required": ["hex_value"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "validate_email_format",
+            "description": "Check if a string is in the correct email format",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "The email string to validate"
+                    }
+                },
+                "required": ["email"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "geo_locate_ip",
+            "description": "Get the approximate location from an IP address",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "ip_address": {
+                        "type": "string",
+                        "description": "The IP address to locate"
+                    }
+                },
+                "required": ["ip_address"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "leap_year_check",
+            "description": "Check if a year is a leap year",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "year": {
+                        "type": "number",
+                        "description": "The year to check"
+                    }
+                },
+                "required": ["year"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_bmi",
+            "description": "Calculate body mass index (BMI) from height and weight",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "type": "number",
+                        "description": "The height in meters"
+                    },
+                    "weight": {
+                        "type": "number",
+                        "description": "The weight in kilograms"
+                    }
+                },
+                "required": ["height", "weight"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "currency_conversion",
+            "description": "Convert an amount from one currency to another",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "amount": {"type": "number", "description": "The amount of money to convert"},
+                    "from_currency": {"type": "string", "description": "The currency code to convert from"},
+                    "to_currency": {"type": "string", "description": "The currency code to convert to"}
+                },
+                "required": ["amount", "from_currency", "to_currency"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "language_translate",
+            "description": "Translate a sentence from one language to another",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "text": {"type": "string", "description": "The text to translate"},
+                    "from_language": {"type": "string", "description": "The language code of the source text"},
+                    "to_language": {"type": "string", "description": "The language code to translate the text into"}
+                },
+                "required": ["text", "from_language", "to_language"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "rhyme_words",
+            "description": "Find words that rhyme with a given word",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "word": {"type": "string", "description": "The word to find rhymes for"}
+                },
+                "required": ["word"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "generate_nickname",
+            "description": "Generate a random nickname",
+            "parameters": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "find_star_sign",
+            "description": "Find the zodiac star sign from a birthdate",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "birthdate": {"type": "string", "description": "The birthdate in format YYYY-MM-DD"}
+                },
+                "required": ["birthdate"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "word_count",
+            "description": "Calculate the number of words in a string",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "text": {"type": "string", "description": "The text to count words in"}
+                },
+                "required": ["text"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "weather_forecast",
+            "description": "Get weather forecast for a specific location",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "location": {"type": "string", "description": "The city and state, or city and country"}
+                },
+                "required": ["location"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_area_circle",
+            "description": "Calculate the area of a circle given its radius",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "radius": {"type": "number", "description": "The radius of the circle"}
+                },
+                "required": ["radius"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_perimeter_square",
+            "description": "Calculate the perimeter of a square given side length",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "side_length": {"type": "number", "description": "The length of a side of the square"}
+                },
+                "required": ["side_length"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "fetch_news_headlines",
+            "description": "Fetch the latest news headlines",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "source": {"type": "string", "description": "The news source to fetch headlines from"},
+                    "category": {"type": "string", "description": "The category of news to fetch"}
+                },
+                "required": ["source"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "random_joke",
+            "description": "Provide a random joke from a predefined list.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "anagram_check",
+            "description": "Check if two strings are anagrams.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "string1": {"type": "string", "description": "The first string to check"},
+                    "string2": {"type": "string", "description": "The second string to check"}
+                },
+                "required": ["string1", "string2"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_tip",
+            "description": "Calculate tip amount based on total bill and percentage.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "bill_amount": {"type": "number", "description": "The total bill amount"},
+                    "tip_percentage": {"type": "number", "description": "The tip percentage"}
+                },
+                "required": ["bill_amount", "tip_percentage"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_book_recommendation",
+            "description": "Provide a book recommendation based on genre.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "genre": {"type": "string", "description": "The desired book genre"}
+                },
+                "required": ["genre"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "movie_suggestions",
+            "description": "Suggest movies based on a preferred genre.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "genre": {"type": "string", "description": "Preferred movie genre"}
+                },
+                "required": ["genre"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "calculate_retirement_age",
+            "description": "Calculate retirement age based on current age and country regulations.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "current_age": {"type": "number", "description": "The current age of the individual"},
+                    "country": {"type": "string", "description": "The country of residence"}
+                },
+                "required": ["current_age", "country"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_horoscope",
+            "description": "Provide the daily horoscope for a specific zodiac sign.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "zodiac_sign": {"type": "string", "description": "The zodiac sign to get the horoscope for"}
+                },
+                "required": ["zodiac_sign"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "password_strength_check",
+            "description": "Assess the strength of a given password.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "password": {"type": "string", "description": "The password to check"}
+                },
+                "required": ["password"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "generate_meme_text",
+            "description": "Generate humorous text for a meme based on a theme.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "theme": {"type": "string", "description": "The theme for the meme text"}
+                },
+                "required": ["theme"]
+            }
+        }
+    }
+]
